@@ -29,7 +29,7 @@ public class BookController {
         StringBuffer buff = new StringBuffer();
         buff.append("<HP>");
         for (BookBean bean : bookService.findAll()) {
-            buff.append("ID" + bean.getId() + "<BR>" + "タイトル:" + bean.getPublisher() +
+            buff.append("ID" + bean.getId() + "<BR>" + "タイトル:" + bean.getTitle() +
                     "<BR>" + "著者:" + bean.getWritter() + "<BR>" + "出版社:" + bean.getPublisher() +
                     "<BR>" + "価格:" + bean.getPrice() + "<BR><HR>");
         }
